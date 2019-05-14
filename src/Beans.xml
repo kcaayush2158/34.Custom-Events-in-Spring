@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="message" class="com.application.model.Message">
+        <property name="messageId" value="101"/>
+        <property name="messageName" value="hello spring"/>
+    </bean>
+<bean id="userDefinedEventHandler" class="com.application.event.handler.UserDefinedEventHandler"></bean>
+    <bean id="userDefinedEventPublisher" class="com.application.event.handler.UserDefinedEventPublisher"></bean>
+
+</beans>
